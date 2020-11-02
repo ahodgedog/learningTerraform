@@ -1,4 +1,4 @@
-provider "aws" {
-    region = "us-east-1"
-    instance_type = "t2.micro"
+resource "aws_instance" "example2" {
+  ami = "ami-40d28157"
+  instance_type = "t2.micro"
 }
