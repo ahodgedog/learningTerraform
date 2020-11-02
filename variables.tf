@@ -1,9 +1,9 @@
-variable "profile" {
-	type = "string"
+variable profile {
+	type = string
 	default = "default"
 }
 
-variable "region-master" {
-	type = "string"
-	region = "us-east-1"
+variable region-master {
+	type = string
+	default = "us-east-1"
 }
