@@ -12,3 +12,14 @@ resource "aws_instance" "example" {
     Name = "terraform-example"
   }
 }
+
+resource "aws_security_grou" "instance" {
+  name = "terraform-example-instance"
+
+  ingress {
+    from_port = 8080
+    to_port = 8080
+    protocol = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+}
+}
